@@ -9,7 +9,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -18,8 +18,8 @@
 		<a href="home"> <img src="images/mercadu.webp" alt="">
 		</a>
 		<div class="container-return">
-			<a class="return-btn" href="./formfuncionario.html">Form - Funcionarios</a> <a class="funcionarios-btn"
-				href="./funcionarios.html">Funcionarios</a>
+			<a class="return-btn" href="formfuncionario">Form - Funcionarios</a> <a class="funcionarios-btn"
+				href="funcionarios">Funcionarios</a>
 		</div>
 		<div class="container-search">
 
@@ -33,7 +33,7 @@
 			<div class="funcionarios-board">
 				<div class="card-funcionario">
 					<div class="img-funcionario">
-						<img src="./img/tricky-young-charismatic-africanamerican-handsome-man-prepare-surpirse-shushing-with-devious-happy-smile-squinting-having-secret-tell-be-quiet-standing-white-background.png"
+						<img src="images/tricky-young-charismatic-africanamerican-handsome-man-prepare-surpirse-shushing-with-devious-happy-smile-squinting-having-secret-tell-be-quiet-standing-white-background.png"
 							alt="">
 					</div>
 					<div class="text-funcionario">
@@ -44,7 +44,7 @@
 				</div>
 				<div class="card-funcionario">
 					<div class="img-funcionario">
-						<img src="./img/tricky-young-charismatic-africanamerican-handsome-man-prepare-surpirse-shushing-with-devious-happy-smile-squinting-having-secret-tell-be-quiet-standing-white-background.png"
+						<img src="images/tricky-young-charismatic-africanamerican-handsome-man-prepare-surpirse-shushing-with-devious-happy-smile-squinting-having-secret-tell-be-quiet-standing-white-background.png"
 							alt="">
 					</div>
 					<div class="text-funcionario">
@@ -55,7 +55,7 @@
 				</div>
 				<div class="card-funcionario">
 					<div class="img-funcionario">
-						<img src="./img/tricky-young-charismatic-africanamerican-handsome-man-prepare-surpirse-shushing-with-devious-happy-smile-squinting-having-secret-tell-be-quiet-standing-white-background.png"
+						<img src="images/tricky-young-charismatic-africanamerican-handsome-man-prepare-surpirse-shushing-with-devious-happy-smile-squinting-having-secret-tell-be-quiet-standing-white-background.png"
 							alt="">
 					</div>
 					<div class="text-funcionario">
@@ -66,7 +66,7 @@
 				</div>
 				<div class="card-funcionario">
 					<div class="img-funcionario">
-						<img src="./img/tricky-young-charismatic-africanamerican-handsome-man-prepare-surpirse-shushing-with-devious-happy-smile-squinting-having-secret-tell-be-quiet-standing-white-background.png"
+						<img src="images/tricky-young-charismatic-africanamerican-handsome-man-prepare-surpirse-shushing-with-devious-happy-smile-squinting-having-secret-tell-be-quiet-standing-white-background.png"
 							alt="">
 					</div>
 					<div class="text-funcionario">
@@ -77,7 +77,7 @@
 				</div>
 				<div class="card-funcionario">
 					<div class="img-funcionario">
-						<img src="./img/tricky-young-charismatic-africanamerican-handsome-man-prepare-surpirse-shushing-with-devious-happy-smile-squinting-having-secret-tell-be-quiet-standing-white-background.png"
+						<img src="images/tricky-young-charismatic-africanamerican-handsome-man-prepare-surpirse-shushing-with-devious-happy-smile-squinting-having-secret-tell-be-quiet-standing-white-background.png"
 							alt="">
 					</div>
 					<div class="text-funcionario">
@@ -88,7 +88,7 @@
 				</div>
 				<div class="card-funcionario">
 					<div class="img-funcionario">
-						<img src="./img/tricky-young-charismatic-africanamerican-handsome-man-prepare-surpirse-shushing-with-devious-happy-smile-squinting-having-secret-tell-be-quiet-standing-white-background.png"
+						<img src="images/tricky-young-charismatic-africanamerican-handsome-man-prepare-surpirse-shushing-with-devious-happy-smile-squinting-having-secret-tell-be-quiet-standing-white-background.png"
 							alt="">
 					</div>
 					<div class="text-funcionario">

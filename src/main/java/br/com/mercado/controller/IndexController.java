@@ -6,7 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import br.com.mercado.dao.ConnectionFactory;
+import br.com.mercado.dao.FuncionarioDao;
 import br.com.mercado.dao.ProdutoDao;
+import br.com.mercado.model.Funcionario;
 import br.com.mercado.model.Produto;
 
 // Anotação
@@ -90,6 +92,30 @@ public class IndexController {
 		dao.atualizar(p, id);
 		
 		return "redirect:home";
+	}
+	
+	@RequestMapping("/funcionarios")
+	public String funcionariosHome(Model model) {
+		FuncionarioDao dao = new FuncionarioDao();
+		
+		model.addAttribute("funcionarios", dao.listar());
+		
+		return "funcionarios";
+	}
+	
+	@RequestMapping("/formfuncionario")
+	public String formFunc(Long idFunc, Model model) {
+		FuncionarioDao dao = new FuncionarioDao();
+		
+		Funcionario f = new Funcionario();
+		
+		if (idFunc != null) {
+			f = dao.buscarFunc(idFunc);
+		}
+		
+		model.addAttribute("funcionario", f);
+		
+		return "formfuncionario";
 	}
 	
 	

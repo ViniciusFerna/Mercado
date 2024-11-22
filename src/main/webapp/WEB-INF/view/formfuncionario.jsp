@@ -32,23 +32,23 @@
                 <div class="formulario">
 
                     <form method="POST"
-                        action="${produto.id != null ? 'atualizarProduto' : 'salvarProduto' }?id=${produto.id}">
+                        action="${funcionario.idFunc != null ? 'atualizarFuncionario' : 'salvarFuncionario' }?id=${funcionario.idFunc}">
                         <div>
                             <label for="">Foto do Funcionario</label>
                             <input type="file">
                         </div>
 
                         <div>
-                            <input type="text" name="nameFunc" id="nome" placeholder="Insira o nome do funcionario">
+                            <input type="text" name="nomeFunc" id="nome" placeholder="Insira o nome do funcionario">
                         </div>
 
                         <div>
-                            <input type="text" name="position" id="cargo" placeholder="Insira o cargo do funcionario">
+                            <input type="text" name="cargo" id="cargo" placeholder="Insira o cargo do funcionario">
                         </div>
 
                         <div>
 
-                            <input type="text" name="age" id="idade"
+                            <input type="text" name="idade" id="idade"
                                 placeholder="Insira a idade do funcionario">
                         </div>
 

@@ -53,7 +53,7 @@
                     <a href="form?idProduto=${produto.id}">
                     	<button type="button">Editar prato</button>
                     </a>
-                    <a href="deletarProduto?idProduto=${produto.id}">	
+                    <a href="deletarProduto?id=${produto.id}">	
                     	<button type="button">Deletar prato</button>
                     </a>
                     </div>

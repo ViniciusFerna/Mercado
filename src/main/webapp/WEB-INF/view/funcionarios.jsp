@@ -31,72 +31,28 @@
 		<div class="content-wrap">
 
 			<div class="funcionarios-board">
+			
+			<c:forEach items="${funcionarios}" var="funcionario">	
 				<div class="card-funcionario">
+				<a href="funcionario?idFunc=${funcionario.id}">
 					<div class="img-funcionario">
 						<img src="images/tricky-young-charismatic-africanamerican-handsome-man-prepare-surpirse-shushing-with-devious-happy-smile-squinting-having-secret-tell-be-quiet-standing-white-background.png"
 							alt="">
 					</div>
 					<div class="text-funcionario">
-						<h2>Nome Funcionario</h2>
-						<p>Cargo Funcionario</p>
-						<p>Idade Funcionario</p>
+						<h2>${funcionario.nomeFunc}</h2>
+						<p>${funcionario.cargo}</p>
+						<p>${funcionario.idade}</p>
 					</div>
+				</a>
 				</div>
-				<div class="card-funcionario">
-					<div class="img-funcionario">
-						<img src="images/tricky-young-charismatic-africanamerican-handsome-man-prepare-surpirse-shushing-with-devious-happy-smile-squinting-having-secret-tell-be-quiet-standing-white-background.png"
-							alt="">
-					</div>
-					<div class="text-funcionario">
-						<h2>Nome Funcionario</h2>
-						<p>Cargo Funcionario</p>
-						<p>Idade Funcionario</p>
-					</div>
-				</div>
-				<div class="card-funcionario">
-					<div class="img-funcionario">
-						<img src="images/tricky-young-charismatic-africanamerican-handsome-man-prepare-surpirse-shushing-with-devious-happy-smile-squinting-having-secret-tell-be-quiet-standing-white-background.png"
-							alt="">
-					</div>
-					<div class="text-funcionario">
-						<h2>Nome Funcionario</h2>
-						<p>Cargo Funcionario</p>
-						<p>Idade Funcionario</p>
-					</div>
-				</div>
-				<div class="card-funcionario">
-					<div class="img-funcionario">
-						<img src="images/tricky-young-charismatic-africanamerican-handsome-man-prepare-surpirse-shushing-with-devious-happy-smile-squinting-having-secret-tell-be-quiet-standing-white-background.png"
-							alt="">
-					</div>
-					<div class="text-funcionario">
-						<h2>Nome Funcionario</h2>
-						<p>Cargo Funcionario</p>
-						<p>Idade Funcionario</p>
-					</div>
-				</div>
-				<div class="card-funcionario">
-					<div class="img-funcionario">
-						<img src="images/tricky-young-charismatic-africanamerican-handsome-man-prepare-surpirse-shushing-with-devious-happy-smile-squinting-having-secret-tell-be-quiet-standing-white-background.png"
-							alt="">
-					</div>
-					<div class="text-funcionario">
-						<h2>Nome Funcionario</h2>
-						<p>Cargo Funcionario</p>
-						<p>Idade Funcionario</p>
-					</div>
-				</div>
-				<div class="card-funcionario">
-					<div class="img-funcionario">
-						<img src="images/tricky-young-charismatic-africanamerican-handsome-man-prepare-surpirse-shushing-with-devious-happy-smile-squinting-having-secret-tell-be-quiet-standing-white-background.png"
-							alt="">
-					</div>
-					<div class="text-funcionario">
-						<h2>Nome Funcionario</h2>
-						<p>Cargo Funcionario</p>
-						<p>Idade Funcionario</p>
-					</div>
-				</div>
+			</c:forEach>
+				
+				
+				
+				
+				
+				
 			</div>
 
 		</div>

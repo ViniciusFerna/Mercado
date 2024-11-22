@@ -98,7 +98,7 @@ public class IndexController {
 	public String funcionariosHome(Model model) {
 		FuncionarioDao dao = new FuncionarioDao();
 		
-		model.addAttribute("funcionarios", dao.listar());
+		model.addAttribute("funcionarios", dao.listarFunc());
 		
 		return "funcionarios";
 	}
@@ -116,6 +116,35 @@ public class IndexController {
 		model.addAttribute("funcionario", f);
 		
 		return "formfuncionario";
+	}
+	
+	
+	
+	
+	@RequestMapping(value = "salvarFuncionario", method = RequestMethod.POST)
+	public String adicionarFuncionario(Funcionario funcionario) {
+		FuncionarioDao dao = new FuncionarioDao();
+		
+		dao.inserirFunc(funcionario);
+		return "redirect:home";
+	}
+	
+	@RequestMapping("deletarFuncionario")
+	public String deletarFuncionario(Long idFunc) {
+		FuncionarioDao dao = new FuncionarioDao();
+		
+		dao.deletarFunc(idFunc);
+		
+		return "funcionarios";
+	}
+	
+	@RequestMapping(value = "atualizarFuncionario", method = RequestMethod.PUT)
+	public String atualizarFuncionario(Long idFunc, Funcionario f) {
+		FuncionarioDao dao = new FuncionarioDao();
+		
+		dao.atualizarFunc(f, idFunc);
+		
+		return "redirect:funcionarios";
 	}
 	
 	

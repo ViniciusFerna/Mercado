@@ -17,7 +17,7 @@ public class FuncionarioDao {
 	}
 	
 	public void inserirFunc(Funcionario funcionario) {
-		String sql = "INSERT INTO funcionarios (nomeFunc, cargo, idade) VALUES (?, ?, ?)";
+		String sql = "INSERT INTO funcionarios (nomeFunc, cargo, idade)" + "VALUES (?, ?, ?)";
 		
 		PreparedStatement smtp;
 		try {
@@ -35,7 +35,7 @@ public class FuncionarioDao {
 		}
 	}
 	
-	public List<Funcionario> listar() {
+	public List<Funcionario> listarFunc() {
 		String sql = "SELECT * FROM funcionarios";
 			
 			PreparedStatement smtp;
@@ -88,6 +88,41 @@ public class FuncionarioDao {
 			resultado.close();
 			conexao.close();
 			return f;
+		} catch (Exception e) {
+			throw new RuntimeException();
+		}
+	}
+	
+	public void deletarFunc(Long idFunc) {
+		String sql = "DELETE FROM funcionarios WHERE id = ?";
+		
+		PreparedStatement smtp;
+		
+		try {
+			smtp = conexao.prepareStatement(sql);
+			smtp.setLong(1, idFunc);
+			
+			smtp.execute();
+			smtp.close();
+			conexao.close();
+			
+			
+		} catch (Exception e) {
+			throw new RuntimeException();
+		}
+	}
+	
+	public void atualizarFunc(Funcionario funcionario, Long idFunc) {
+		String sql = "UPDATE funcionarios SET nomeFunc = ?, cargo = ?, idade = ?";
+		
+		PreparedStatement smtp;
+		
+		try {
+			smtp = conexao.prepareStatement(sql);
+			
+			smtp.setString(1, funcionario.getNomeFunc());
+			smtp.setString(2, funcionario.getCargo());
+			smtp.setString(3, funcionario.getIdade());
 		} catch (Exception e) {
 			throw new RuntimeException();
 		}

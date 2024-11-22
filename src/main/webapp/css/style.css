@@ -393,6 +393,10 @@ body {
     height: 25px;
 }
 
+.card-funcionario a {
+	text-decoration: none;
+}
+
 
 
 

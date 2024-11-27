@@ -66,7 +66,7 @@ public class FuncionarioDao {
 	}
 	
 	public Funcionario buscarFunc(Long idFunc) {
-		String sql = "SELECT & FROM funcionarios WHERE idFunc = ?";
+		String sql = "SELECT * FROM funcionarios WHERE idFunc = ?";
 		
 		PreparedStatement smtp;
 		

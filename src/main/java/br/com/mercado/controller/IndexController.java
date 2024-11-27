@@ -118,6 +118,15 @@ public class IndexController {
 		return "formfuncionario";
 	}
 	
+	@RequestMapping("/funcionario")
+	public String funcionarioView(Long idFunc, Model model) {
+		FuncionarioDao dao = new FuncionarioDao();
+		// /produto?idProduto=523
+		model.addAttribute("funcionario", dao.buscarFunc(idFunc));
+		
+		return "funcionarioView";
+	}
+	
 	
 	
 	

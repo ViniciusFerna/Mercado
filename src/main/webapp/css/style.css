@@ -260,6 +260,7 @@ body {
 }
 
 #send-btn:hover {
+    transition: color 0.5s;
     border: 2px solid blue;
     background-color: #1B07ED;
     color: rgb(255, 255, 255);
@@ -395,6 +396,55 @@ body {
 
 .card-funcionario a {
 	text-decoration: none;
+}
+
+.funcionario-container {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.funcionario-image img {
+    width: 500px;
+    height: 300px;
+
+}
+
+.editar-deletar-funcionario {
+    margin-left: 1px;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.edit-btn {
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-right: 10px;
+    background-color: blue;
+    border: none;
+    text-decoration: none;
+    color: black;
+}
+
+.edit-btn:hover {
+    transition: color 0.5s;
+    color: white;
+    background-color: #1B07ED;
+}
+
+.delete-btn {
+    background-color: blue;
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.delete-btn:hover {
+    transition: color 0.5s;
+    color: white;
+    background-color: #1B07ED;
 }
 
 

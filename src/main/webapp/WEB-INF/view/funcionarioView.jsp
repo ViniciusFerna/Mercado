@@ -3,16 +3,17 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Funcionario</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=1">
 </head>
 
 <body>
+
     <nav class="nav-bar">
         <a href="home"> <img src="images/mercadu.webp" alt="">
         </a>
@@ -25,42 +26,37 @@
             <label for=""></label> <input type="text" placeholder="Busque por produtos..." id="search-bar">
         </div>
     </nav>
+
     <div class="page-container">
         <div class="content-wrap">
 
-            <div class="form-container">
-                <div class="formulario">
 
-                    <form method="POST" action="${Funcionario.idFunc != null ? 'atualizarFuncionario' : 'salvarFuncionario' }?id=${Funcionario.idFunc}">
-                        <div>
-                            <label for="">Foto do Funcionario</label>
-                            <input type="file">
-                        </div>
+            <div class="funcionario-container">
 
-                        <div>
-                            <input type="text" name="nomeFunc" id="nome" placeholder="Insira o nome do funcionario">
-                        </div>
+                <div class="funcionario-image">
+                    <img src="images/tricky-young-charismatic-africanamerican-handsome-man-prepare-surpirse-shushing-with-devious-happy-smile-squinting-having-secret-tell-be-quiet-standing-white-background.png"
+                        alt="">
+                </div>
 
-                        <div>
-                            <input type="text" name="cargo" id="cargo" placeholder="Insira o cargo do funcionario">
-                        </div>
+                <div class="info-container">
 
-                        <div>
+                    <h1 id="nome-funcionario">${funcionario.nomeFunc}</h1>
+                    <h2 id="cargo-funcionario">${funcionario.cargo}</h2>
+                    <h3 id="idade-funcionario">${funcionario.idade}</h3>
 
-                            <input type="text" name="idade" id="idade"
-                                placeholder="Insira a idade do funcionario">
-                        </div>
-
-
-                        <!-- Demais campos... -->
-                        <div class="sendbtn-container">
-                            <button type="submit" id="send-btn">Enviar</button>
-                        </div>
-                    </form>
+                    <div class="editar-deletar-funcionario">
+                        <a class="edit-btn" href="formfuncionario?idFunc=${funcionario.idFunc}">
+                            Editar funcionario
+                        </a>
+                        <a class="delete-btn" href="deletarFuncionario?idFunc=${funcionario.idFunc}">
+                            Deletar funcionario
+                        </a>
+                    </div>
                 </div>
             </div>
 
         </div>
+
         <footer class="footer">
             <div class="reserved-rights">
                 <h3>All Rights ReservedÂ®</h3>
@@ -71,6 +67,7 @@
                 <p>(11) 969246-9691</p>
             </div>
         </footer>
+
     </div>
 
 </body>

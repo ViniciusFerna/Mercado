@@ -32,17 +32,17 @@
 
 			<div class="funcionarios-board">
 			
-			<c:forEach items="${funcionarios}" var="funcionario">	
+			<c:forEach items="${funcionarios}" var="funcionarios">	
 				<div class="card-funcionario">
-				<a href="funcionario?idFunc=${funcionario.id}">
+				<a href="funcionario?idFunc=${funcionarios.idFunc}">
 					<div class="img-funcionario">
 						<img src="images/tricky-young-charismatic-africanamerican-handsome-man-prepare-surpirse-shushing-with-devious-happy-smile-squinting-having-secret-tell-be-quiet-standing-white-background.png"
 							alt="">
 					</div>
 					<div class="text-funcionario">
-						<h2>${funcionario.nomeFunc}</h2>
-						<p>${funcionario.cargo}</p>
-						<p>${funcionario.idade}</p>
+						<h2>${funcionarios.nomeFunc}</h2>
+						<p>${funcionarios.cargo}</p>
+						<p>${funcionarios.idade}</p>
 					</div>
 				</a>
 				</div>

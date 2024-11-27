@@ -50,12 +50,12 @@
                     <h1 id="preco-produto">R$ ${produto.preco}</h1>
                     
                     <div class="item-editar-pizza">
-                    <a href="form?idProduto=${produto.id}">
-                    	<button type="button">Editar prato</button>
-                    </a>
-                    <a href="deletarProduto?id=${produto.id}">	
-                    	<button type="button">Deletar prato</button>
-                    </a>
+                    <a class="edit-btn" href="form?idProduto=${produto.id}">
+                            Editar produto
+                        </a>
+                        <a class="delete-btn" href="deletarProduto?id=${produto.id}">
+                            Deletar produto
+                        </a>
                     </div>
                 </div>
             </div>

@@ -38,13 +38,13 @@ public class IndexController {
 	}
 	
 	@RequestMapping("/form") 
-	public String form(Long id, Model model) {
+	public String form(Long idProduto, Model model) {
 		ProdutoDao dao = new ProdutoDao();
 		
 		Produto p = new Produto();
 		
-		if (id != null) {
-			p = dao.buscar(id);
+		if (idProduto != null) {
+			p = dao.buscar(idProduto);
 		}
 		
 		model.addAttribute("produto", p);
@@ -74,7 +74,7 @@ public class IndexController {
 		ProdutoDao dao = new ProdutoDao();
 		dao.deletar(id);
 		
-		return "home";
+		return "redirect:home";
 		
 	}
 	
@@ -85,7 +85,7 @@ public class IndexController {
 	 * DELETE - Deletar Informações
 	 */
 	
-	@RequestMapping(value = "atualizarProduto", method = RequestMethod.PUT)
+	@RequestMapping(value = "atualizarProduto", method = RequestMethod.POST)
 	public String atualizarProduto(Long id, Produto p) {
 		ProdutoDao dao = new ProdutoDao();
 		
@@ -135,7 +135,7 @@ public class IndexController {
 		FuncionarioDao dao = new FuncionarioDao();
 		
 		dao.inserirFunc(funcionario);
-		return "redirect:home";
+		return "redirect:funcionarios";
 	}
 	
 	@RequestMapping("deletarFuncionario")
@@ -144,7 +144,7 @@ public class IndexController {
 		
 		dao.deletarFunc(idFunc);
 		
-		return "funcionarios";
+		return "redirect:funcionarios";
 	}
 	
 	@RequestMapping(value = "atualizarFuncionario", method = RequestMethod.PUT)

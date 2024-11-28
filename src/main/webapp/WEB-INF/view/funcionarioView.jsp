@@ -40,9 +40,9 @@
 
                 <div class="info-container">
 
-                    <h1 id="nome-funcionario">${funcionario.nomeFunc}</h1>
-                    <h2 id="cargo-funcionario">${funcionario.cargo}</h2>
-                    <h3 id="idade-funcionario">${funcionario.idade}</h3>
+                    <h1 id="nome-funcionario">Nome: ${funcionario.nomeFunc}</h1>
+                    <h2 id="cargo-funcionario">Cargo: ${funcionario.cargo}</h2>
+                    <h3 id="idade-funcionario">Idade: ${funcionario.idade}</h3>
 
                     <div class="editar-deletar-funcionario">
                         <a class="edit-btn" href="formfuncionario?idFunc=${funcionario.idFunc}">

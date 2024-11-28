@@ -339,8 +339,9 @@ body {
     width: 300px;
     height: 400px;
     margin: 27px;
-    overflow: auto;
     border: 1px solid gray;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 .img-funcionario img {
@@ -446,6 +447,19 @@ body {
     color: white;
     background-color: #1B07ED;
 }
+
+#cargo-home {
+	max-width: 35ch;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+#cargo-funcionario {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-width: 60ch;
+}
+
 
 
 

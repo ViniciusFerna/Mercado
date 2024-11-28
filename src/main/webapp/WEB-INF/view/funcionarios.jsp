@@ -9,7 +9,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css?v=1">
 </head>
 
 <body>
@@ -41,7 +41,7 @@
 					</div>
 					<div class="text-funcionario">
 						<h2>${funcionarios.nomeFunc}</h2>
-						<p>${funcionarios.cargo}</p>
+						<p id="cargo-home">${funcionarios.cargo}</p>
 						<p>${funcionarios.idade}</p>
 					</div>
 				</a>

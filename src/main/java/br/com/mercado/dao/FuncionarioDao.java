@@ -94,7 +94,7 @@ public class FuncionarioDao {
 	}
 	
 	public void deletarFunc(Long idFunc) {
-		String sql = "DELETE FROM funcionarios WHERE id = ?";
+		String sql = "DELETE FROM funcionarios WHERE idFunc = ?";
 		
 		PreparedStatement smtp;
 		
@@ -123,6 +123,7 @@ public class FuncionarioDao {
 			smtp.setString(1, funcionario.getNomeFunc());
 			smtp.setString(2, funcionario.getCargo());
 			smtp.setString(3, funcionario.getIdade());
+			
 		} catch (Exception e) {
 			throw new RuntimeException();
 		}

@@ -104,13 +104,13 @@ public class IndexController {
 	}
 	
 	@RequestMapping("/formfuncionario")
-	public String formFunc(Long idFunc, Model model) {
+	public String formFunc(Long idFuncionario, Model model) {
 		FuncionarioDao dao = new FuncionarioDao();
 		
 		Funcionario f = new Funcionario();
 		
-		if (idFunc != null) {
-			f = dao.buscarFunc(idFunc);
+		if (idFuncionario != null) {
+			f = dao.buscarFunc(idFuncionario);
 		}
 		
 		model.addAttribute("funcionario", f);
@@ -147,7 +147,7 @@ public class IndexController {
 		return "redirect:funcionarios";
 	}
 	
-	@RequestMapping(value = "atualizarFuncionario", method = RequestMethod.PUT)
+	@RequestMapping(value = "atualizarFuncionario", method = RequestMethod.POST)
 	public String atualizarFuncionario(Long idFunc, Funcionario f) {
 		FuncionarioDao dao = new FuncionarioDao();
 		

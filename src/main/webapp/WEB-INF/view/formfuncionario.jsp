@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form - Funcionario</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -31,7 +31,7 @@
             <div class="form-container">
                 <div class="formulario">
 
-                    <form method="POST" action="${Funcionario.idFunc != null ? 'atualizarFuncionario' : 'salvarFuncionario' }?id=${Funcionario.idFunc}">
+                    <form method="POST" action="${funcionario.idFunc != 0 ? 'atualizarFuncionario' : 'salvarFuncionario' }?idFunc=${funcionario.idFunc}">
                         <div>
                             <label for="">Foto do Funcionario</label>
                             <input type="file">
@@ -54,7 +54,7 @@
 
                         <!-- Demais campos... -->
                         <div class="sendbtn-container">
-                            <button type="submit" id="send-btn">Enviar</button>
+                            <button id="send-btn">Enviar</button>
                         </div>
                     </form>
                 </div>

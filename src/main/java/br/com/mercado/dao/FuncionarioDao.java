@@ -113,7 +113,7 @@ public class FuncionarioDao {
 	}
 	
 	public void atualizarFunc(Funcionario funcionario, Long idFunc) {
-		String sql = "UPDATE funcionarios SET nomeFunc = ?, cargo = ?, idade = ?";
+		String sql = "UPDATE funcionarios SET nomeFunc = ?, cargo = ?, idade = ? WHERE idFunc = ?";
 		
 		PreparedStatement smtp;
 		
@@ -123,6 +123,11 @@ public class FuncionarioDao {
 			smtp.setString(1, funcionario.getNomeFunc());
 			smtp.setString(2, funcionario.getCargo());
 			smtp.setString(3, funcionario.getIdade());
+			smtp.setLong(4, idFunc);
+			
+			smtp.execute();
+			smtp.close();
+			conexao.close();
 			
 		} catch (Exception e) {
 			throw new RuntimeException();

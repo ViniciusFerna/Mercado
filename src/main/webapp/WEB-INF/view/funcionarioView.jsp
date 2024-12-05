@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funcionario</title>
+    <title>"${funcionario.nomeFunc}"</title>
     <link rel="stylesheet" type="text/css" href="css/style.css?v=1">
 </head>
 
@@ -45,7 +45,7 @@
                     <h3 id="idade-funcionario">Idade: ${funcionario.idade}</h3>
 
                     <div class="editar-deletar-funcionario">
-                        <a class="edit-btn" href="formfuncionario?idFunc=${funcionario.idFunc}">
+                        <a class="edit-btn" href="formfuncionario?idFuncionario=${funcionario.idFunc}">
                             Editar funcionario
                         </a>
                         <a class="delete-btn" href="deletarFuncionario?idFunc=${funcionario.idFunc}">

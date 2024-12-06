@@ -34,7 +34,7 @@
 				<div class="hero">
 					<img src="images/produtospng.png" alt="">
 					<h1>
-						Mercado<span>Bosta</span>
+						Mercado<span>Lindo</span>
 					</h1>
 				</div>
 			</div>
@@ -75,7 +75,7 @@
 			</div>
 			<div class="contato">
 				<h3>Entre em contato</h3>
-				<p>atendimento@bosta💩🤎.com.br</p>
+				<p>atendimento@lindoa💩🤎.com.br</p>
 				<p>(11) 969246-9691</p>
 			</div>
 		</footer>

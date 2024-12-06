@@ -63,7 +63,7 @@
 			</div>
 			<div class="contato">
 				<h3>Entre em contato</h3>
-				<p>atendimento@bosta💩🤎.com.br</p>
+				<p>atendimento@lindo💩🤎.com.br</p>
 				<p>(11) 969246-9691</p>
 			</div>
 		</footer>
